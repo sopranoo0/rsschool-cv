@@ -11,11 +11,14 @@ I like programming.
 It is fascinating and interesting. 
 I'm also learning CSS and want to become a great front end developer. 
 Here you can find my projects and contacts.
-# Skills
-* HTML (Basic)
-* CSS (Basic)
-* JavaScript (Basic)
-* Git
+## Skills
+- **HTML**
+- **CSS**
+- **JS**
+- **SASS**
+- **Git/GitHub**
+- **BEM**
+- **Photoshop/Figma**
 # Code Example
 ```
 function log(a) {
