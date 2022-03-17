@@ -1,5 +1,5 @@
 # [rsschool-cv](https://github.com/sopranoo0/rsschool-cv)
-# Oleg Ganin
+# Krasilnikov Vasiliy
 # Personal Info
 * Address: Nizhniy Novgorod, Russia
 * Phone: +7(930)807-50-60
