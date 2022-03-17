@@ -1,0 +1,143 @@
+/* === DESKTOP FIRST === */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {
+
+}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {
+
+}
+
+/* md <= Large (lg) */
+@media (max-width : 992px) {
+
+}
+
+/* sm <= Medium (md) */
+@media (max-width : 768px) {
+	.profile{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.profile__image{
+		margin: 30px 0 20px 0;
+		transform: unset;
+	}
+	.profile__title{
+		text-align: center;
+		transform: unset;
+		margin-bottom: 20px;
+	}
+
+	.g-box{
+		max-width: 550px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.main{
+		background-color: unset;
+	}
+	.info:before{
+		content: '';
+		min-height: 70px;
+		width: 100%;
+		margin-right: unset;
+		border-left: var(--border) solid var(--accent);
+	}
+	.info:after{
+		display: none;
+	}
+	.info__item{
+		width: 100%;
+		padding: 0 50px 50px 50px;
+		border-left: var(--border) solid var(--accent);
+	}
+	.info__item:nth-child(even){
+		margin-right: 0;
+		padding: 0 50px 50px 50px;
+	}
+	.info__item:nth-child(1){
+		padding: 0 50px 50px 50px;
+	}
+	.info__item:nth-child(odd)::before{
+		width: 50px;
+		top: 0;
+		left: 0;
+	}
+	.info__item:nth-child(even)::before{
+		width: 50px;
+		top: 0;
+		left: 0;
+		transform: unset;
+	}
+	.info__item:nth-child(1)::before{
+		top: 0;
+	}
+	.info__item:nth-child(even) .info__inner{
+		transform: unset;
+	}
+	.info__item .title{
+		transform: translateY(-50%);
+	}
+}
+
+/* xs <= Small (sm) */
+@media (max-width : 576px) {
+
+}
+
+@media (max-width :400px) {
+	.info__item{
+		padding: 0 30px 50px 30px;
+	}
+	.info__item:nth-child(even){
+		padding: 0 30px 50px 30px;
+	}
+	.info__item:nth-child(1){
+		padding: 0 30px 50px 30px;
+	}
+	.skills__bar{
+		min-width: 150px
+	}
+}
+
+
+/* === MOBILE FIRST === */
+
+/* Custom (xs) */
+@media (min-width : 0) {
+
+}
+
+/* Small (sm) */
+@media (min-width : 576px) {
+
+}
+
+/* Medium (md) */
+@media (min-width : 768px) {
+
+}
+
+/* Large (lg) */
+@media (min-width : 992px) {
+
+}
+
+/* Extra large (xl) */
+@media (min-width : 1200px) {
+	.text {
+		font-size: 18px;
+	}
+}
+
+/* Extra extra large (xxl) */
+@media (min-width : 1400px) {
+	.text {
+		font-size: 22px;
+	}
+}
