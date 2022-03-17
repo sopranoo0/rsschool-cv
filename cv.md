@@ -21,6 +21,7 @@ Here you can find my projects and contacts.
 function log(a) {
 	consol.log(a);
 }
+log('Hello!');
 ```
 # Experience
 * 2014-2022 Web Developer. 
