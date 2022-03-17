@@ -22,7 +22,7 @@ Here you can find my projects and contacts.
 # Code Example
 ```
 function log(a) {
-	consol.log(a);
+	console.log(a);
 }
 log('Hello!');
 ```
