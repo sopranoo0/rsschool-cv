@@ -2,8 +2,8 @@
 
 :root {
 	--accent: #6b9d9e;
-	--text: #333;
-	--light-text: #fff;
+	--text: #333333;
+	--light-text: #ffffff;
 
 	--lineheight: 1.65;
 	--userfont: roboto-st, sans-serif;
@@ -31,8 +31,8 @@
 
 /* GENERAL CSS SETTINGS */
 
-::placeholder { color: #666; }
-::selection { background-color: var(--accent); color: #fff; }
+::placeholder { color: #666666; }
+::selection { background-color: var(--accent); color: #ffffff; }
 input, textarea { outline: none; }
 input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
 input:required:valid, textarea:required:valid { border-color: green; }
@@ -46,20 +46,31 @@ html{
 }
 
 body {
+	position: relative;
+	min-width: 320px;
+	min-height: 100vh;
+	margin: 0;
 	font-family: var(--userfont);
 	font-size: var(--regular-text);
 	line-height: var(--lineheight);
 	color: var(--text);
-	min-width: 320px;
-	position: relative;
 	overflow-x: hidden;
-	margin: 0;
-	min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6, p{
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p,
+ul {
 	padding: 0;
 	margin: 0;
+}
+
+ul {
+	list-style: none;
 }
 
 /* USER STYLES */
@@ -70,7 +81,7 @@ h1, h2, h3, h4, h5, h6, p{
 	border-radius: 4px;
 }
 
-.accent, a {
+a {
 	color: var(--accent);
 	font-weight: bold;
 }
@@ -94,38 +105,38 @@ h1, h2, h3, h4, h5, h6, p{
 	justify-content: center;
 	align-items: flex-end;
 }
-.profile__image{
+.profile-image{
 	width: 200px;
 	height: 200px;
-	overflow: hidden;
 	border-radius: 50%;
 	border: 15px solid white;
+	overflow: hidden;
 	transform: translateY(50%);
 }
-.profile__image img{
+.profile-image img{
 	width: 100%;
 }
-.profile__title{
+.profile-title{
+	margin-bottom: 20px;
 	text-align: center;
 	transform: translateX(50px);
-	margin-bottom: 20px;
 }
-.profile__title span{
-	display: inline-block;
-	width: 50px;
-	height: var(--border);
-	background-color: #fff;
-}
-.profile__title h1{
+.profile-title__main{
 	margin-bottom: -10px;
-	color: var(--light-text);
 	font-size: var(--h1-size);
 	text-transform: uppercase;
-}
-.profile__title h3{
 	color: var(--light-text);
+}
+.profile-title__line{
+	width: 50px;
+	height: var(--border);
+	display: inline-block;
+	background-color: #fff;
+}
+.profile-title__sub{
 	font-size: var(--h3-size);
 	text-transform: uppercase;
+	color: var(--light-text);
 }
 
 
@@ -164,20 +175,20 @@ h1, h2, h3, h4, h5, h6, p{
 .info__item:nth-child(odd)::before{
 	content: '';
 	position: absolute;
+	top: -2px;
+	left: -4px;
 	width: 60px;
 	height: var(--border);
 	background-color: var(--accent);
-	top: -2px;
-	left: -4px;
 }
 .info__item:nth-child(even)::before{
 	content: '';
 	position: absolute;
+	top: -2px;
+	right: 0;
 	width: calc(100% - 60px);
 	height: var(--border);
 	background-color: var(--accent);
-	top: -2px;
-	right: 0;
 	transform: translateY(-70px);
 }
 .info__item:nth-child(1)::before{
@@ -191,12 +202,12 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .title > *{
-	padding: 0 20px;
 	display: inline-block;
+	padding: 0 20px;
 	font-size: var(--h3-size);
+	color: var(--accent);
 	text-transform: uppercase;
 	border: var(--border) solid var(--accent);
-	color: var(--accent);
 	background-color: #fff;
 }
 
@@ -207,13 +218,13 @@ h1, h2, h3, h4, h5, h6, p{
 	justify-content: space-between;
 }
 .skills__title{
-	font-weight: bold;
 	margin-right: 10px;
+	font-weight: bold;
 }
 .skills__bar{
-	border: 1px solid var(--accent);
 	height: 10px;
-	min-width: 200px
+	min-width: 200px;
+	border: 1px solid var(--accent);
 }
 .skills__bar:before{
 	content: '';
@@ -230,12 +241,12 @@ h1, h2, h3, h4, h5, h6, p{
 	align-items: center;
 }
 .language__title{
-	font-weight: bold;
 	margin-right: 10px;
+	font-weight: bold;
 }
 .language__stars{
-	color: var(--accent);
 	font-size: var(--h1-size);
+	color: var(--accent);
 }
 
 
