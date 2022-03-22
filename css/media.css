@@ -28,9 +28,9 @@
 		transform: unset;
 	}
 	.profile__title{
+		margin-bottom: 20px;
 		text-align: center;
 		transform: unset;
-		margin-bottom: 20px;
 	}
 
 	.g-box{
@@ -130,14 +130,10 @@
 
 /* Extra large (xl) */
 @media (min-width : 1200px) {
-	.text {
-		font-size: 18px;
-	}
+	
 }
 
 /* Extra extra large (xxl) */
 @media (min-width : 1400px) {
-	.text {
-		font-size: 22px;
-	}
+	
 }

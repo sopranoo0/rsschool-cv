@@ -2,9 +2,8 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-
 	<title>My CV</title>
+	<meta charset="utf-8">
 	<meta name="description" content="My CV">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<link rel="icon" href="images/favicon.png">
@@ -17,13 +16,13 @@
 
 	<header class="header">
 		<div class="g-box profile">
-			<div class="profile__image">
+			<div class="profile-image">
 				<img src="images/user_pic.jpg" alt="Krasilnikov Vasiliy userpic">
 			</div>
-			<div class="profile__title">
-				<h1>Krasilnikov Vasiliy</h1>
-				<span></span>
-				<h3>Web developer</h3>
+			<div class="profile-title">
+				<h1 class="profile-title__main">Krasilnikov Vasiliy</h1>
+				<span class="profile-title__line"></span>
+				<h2 class="profile-title__sub">Web developer</h2>
 			</div>
 		</div>
 	</header>
@@ -32,7 +31,9 @@
 		<div class="info">
 			<div class="info__item">
 				<div class="info__inner">
-					<div class="title"><h5>Summary</h5></div>
+					<div class="title">
+						<h2>Summary</h2>
+					</div>
 					<p>
 						I like programming. 
 						It is fascinating and interesting. 
@@ -43,67 +44,100 @@
 			</div>
 			<div class="info__item">
 				<div class="info__inner">
-					<div class="title"><h5>Contacts</h5></div>
-	
-					<p><span class="g-text-bold">Address:</span> <span>Russia, Nizhniy Novgorod</span></p>
-					<p><span class="g-text-bold">Email:</span> <a href="mailto:greg-lutzka@yandex.ru" target="_blank">greg-lutzka@yandex.ru</a></p>
-					<p><span class="g-text-bold">Github:</span> <a href="https://github.com/sopranoo0" target="_blank">sopranoo0</a></p>
-					<p><span class="g-text-bold">Telegram:</span> <a href="https://t.me/sopranoo0" target="_blank">@sopranoo0</a></p>
-					<p><span class="g-text-bold">Discord:</span> <a href="https://discord.com/users/694601841819910189" target="_blank">sopranoo0#7955</a></p>
+					<div class="title">
+						<h3>Contacts</h3>
+					</div>
+					<ul>
+						<li>
+							<p><span class="g-text-bold">Address:</span> <span>Russia, Nizhniy Novgorod</span></p>
+						</li>
+						<li>
+							<p><span class="g-text-bold">Email:</span> <a href="mailto:greg-lutzka@yandex.ru" target="_blank">greg-lutzka@yandex.ru</a></p>
+						</li>
+						<li>
+							<p><span class="g-text-bold">Github:</span> <a href="https://github.com/sopranoo0" target="_blank">sopranoo0</a></p>
+						</li>
+						<li>
+							<p><span class="g-text-bold">Telegram:</span> <a href="https://t.me/sopranoo0" target="_blank">@sopranoo0</a></p>
+						</li>
+						<li>
+							<p><span class="g-text-bold">Discord:</span> <a href="https://discord.com/users/694601841819910189" target="_blank">sopranoo0#7955</a></p>
+						</li>
+					</ul>
+					
 				</div>
 			</div>
 			<div class="info__item">
 				<div class="info__inner">
-					<div class="title"><h5>Code</h5></div>
+					<div class="title">
+						<h3>Code</h3>
+					</div>
 					<code>
-						function log(a) {<br>
-						&nbsp;	console.log(a);<br>
+						function log(a) { <br>
+						&nbsp;	console.log(a); <br>
 						}
 					</code>
 				</div>
 			</div>
 			<div class="info__item">
 				<div class="info__inner">
-					<div class="title"><h5>Skills</h5></div>
-					<div class="skills">
-						<p class="skills__title">HTML5 + CSS3</p>
-						<p class="skills__bar skills__bar--9"></p>
+					<div class="title">
+						<h3>Skills</h3>
 					</div>
-					<div class="skills">
-						<p class="skills__title">JavaScript</p>
-						<p class="skills__bar skills__bar--5"></p>
-					</div>
-					<div class="skills">
-						<p class="skills__title">PHP7</p>
-						<p class="skills__bar skills__bar--7"></p>
-					</div>
+					<ul>
+						<li class="skills">
+							<p class="skills__title">HTML5 + CSS3</p>
+							<p class="skills__bar skills__bar--9"></p>
+						</li>
+						<li class="skills">
+							<p class="skills__title">JavaScript</p>
+							<p class="skills__bar skills__bar--5"></p>
+						</li>
+						<li class="skills">
+							<p class="skills__title">PHP7</p>
+							<p class="skills__bar skills__bar--7"></p>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<div class="info__item">
 				<div class="info__inner">
-					<div class="title"><h5>Education</h5></div>
+					<div class="title">
+						<h4>Education</h4>
+					</div>
 					<p><span class="g-text-bold">University:</span> State Polytechnical University </p>
 				</div>
 			</div>
 			<div class="info__item">
 				<div class="info__inner">
-					<div class="title"><h5>Language</h5></div>
-					<div class="language">
-						<p class="language__title">Ru</p>
-						<span class="language__stars"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></span>
+					<div class="title">
+						<h4>Language</h4>
 					</div>
-					<div class="language">
-						<p class="language__title">En</p>
-						<span class="language__stars"><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span></span>
-					</div>
+					<ul>
+						<li class="language">
+							<p class="language__title">Ru</p>
+							<span class="language__stars"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></span>
+						</li>
+						<li class="language">
+							<p class="language__title">En</p>
+							<span class="language__stars"><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span></span>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<div class="info__item">
 				<div class="info__inner">
-					<div class="title"><h5>Projects</h5></div>
-					<p><span class="g-text-bold">Website:</span> <a href="https://bravomos.ru/" target="_blank">bravomos.ru</a></p>
-					<p><span class="g-text-bold">Website:</span> <a href="https://mamazharit.ru/" target="_blank">mamazharit.ru</a></p>
-					<p><span class="g-text-bold">Website:</span> <a href="https://stonewood.su/" target="_blank">stonewood.su</a></p>
+					<div class="title">
+						<h2>Projects</h2>
+					</div>
+					<ul>
+						<li>
+							<p><span class="g-text-bold">Website:</span> <a href="https://bravomos.ru/" target="_blank">bravomos.ru</a></p>
+						</li>
+						<li>
+							<p><span class="g-text-bold">Website:</span> <a href="https://mamazharit.ru/" target="_blank">mamazharit.ru</a></p>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
