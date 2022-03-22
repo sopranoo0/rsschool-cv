@@ -2,8 +2,8 @@
 
 :root {
 	--accent: #6b9d9e;
-	--text: #333;
-	--light-text: #fff;
+	--text: #333333;
+	--light-text: #ffffff;
 
 	--lineheight: 1.65;
 	--userfont: roboto-st, sans-serif;
@@ -31,8 +31,8 @@
 
 /* GENERAL CSS SETTINGS */
 
-::placeholder { color: #666; }
-::selection { background-color: var(--accent); color: #fff; }
+::placeholder { color: #666666; }
+::selection { background-color: var(--accent); color: #ffffff; }
 input, textarea { outline: none; }
 input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
 input:required:valid, textarea:required:valid { border-color: green; }
@@ -81,7 +81,7 @@ ul {
 	border-radius: 4px;
 }
 
-.accent, a {
+a {
 	color: var(--accent);
 	font-weight: bold;
 }
