@@ -23,14 +23,14 @@
 		align-items: center;
 		flex-direction: column;
 	}
-	.profile__image{
+	.profile-image{
 		margin: 30px 0 20px 0;
 		transform: unset;
 	}
-	.profile__title{
+	.profile-title{
+		margin-bottom: 20px;
 		text-align: center;
 		transform: unset;
-		margin-bottom: 20px;
 	}
 
 	.g-box{
@@ -83,6 +83,9 @@
 	.info__item .title{
 		transform: translateY(-50%);
 	}
+	.footer-info{
+		padding: 5px 10px;
+	}
 }
 
 /* xs <= Small (sm) */
@@ -130,14 +133,10 @@
 
 /* Extra large (xl) */
 @media (min-width : 1200px) {
-	.text {
-		font-size: 18px;
-	}
+	
 }
 
 /* Extra extra large (xxl) */
 @media (min-width : 1400px) {
-	.text {
-		font-size: 22px;
-	}
+	
 }
