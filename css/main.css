@@ -252,13 +252,26 @@ a {
 
 
 .footer{
-	height: 30px;
+	
 }
 .footer__inner{
 	position: absolute;
 	bottom: 0;
-	height: 30px;
 	width: 100%;
 	background-color: var(--accent);
 }
-
+.footer-info{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 0;
+}
+.footer-info__year{
+	color: #ffffff;
+}
+.footer-info__github{
+	color: #ffffff;
+}
+.footer-info__img{
+	display: flex;
+}
