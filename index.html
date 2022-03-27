@@ -10,11 +10,42 @@
 
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
 </head>
 
 <body>
 
 	<header class="header">
+		<div class="nav">
+			<input class="nav__check" type="checkbox" id="showmenu"/>
+			<label class="nav__showmenu" for="showmenu">&#9776;</label>
+			<label class="nav__back" for="showmenu"></label>
+			<nav class="menu js-menu">
+				<li>
+					<a class="menu__item" href="#summary">Summary</a>
+				</li>
+				<li>
+					<a class="menu__item" href="#contacts">Contacts</a>
+				</li>
+				<li>
+					<a class="menu__item" href="#code">Code</a>
+				</li>
+				<li>
+					<a class="menu__item" href="#skills">Skills</a>
+				</li>
+				<li>
+					<a class="menu__item" href="#education">Education</a>
+				</li>
+				<li>
+					<a class="menu__item" href="#language">Language</a>
+				</li>
+				<li>
+					<a class="menu__item" href="#projects">Projects</a>
+				</li>
+			</nav>
+		</div>
 		<div class="g-box profile">
 			<div class="profile-image">
 				<img src="images/user_pic.jpg" alt="Krasilnikov Vasiliy userpic">
@@ -30,7 +61,7 @@
 	<main class="g-box main">
 		<div class="info">
 			<div class="info__item">
-				<section class="info__inner">
+				<section class="info__inner" id="summary">
 					<div class="title">
 						<h2>Summary</h2>
 					</div>
@@ -43,7 +74,7 @@
 				</section>
 			</div>
 			<div class="info__item">
-				<section class="info__inner">
+				<section class="info__inner" id="contacts">
 					<div class="title">
 						<h3>Contacts</h3>
 					</div>
@@ -68,19 +99,24 @@
 				</section>
 			</div>
 			<div class="info__item">
-				<section class="info__inner">
+				<section class="info__inner" id="code">
 					<div class="title">
 						<h3>Code</h3>
 					</div>
-					<code>
-						function log(a) { <br>
-						&nbsp;	console.log(a); <br>
-						}
-					</code>
+					<pre>
+						<code class="language-javascript">
+function nthFibonacci(n) {<br>
+  let fib = [0,1];<br>
+  for(let i = 2; i < n; i++)<br>
+    fib[i] = fib[i-2] + fib[i-1];<br>
+  return fib[n-1] ? fib[n-1] : 0;<br>
+}
+						</code>
+					</pre>
 				</section>
 			</div>
 			<div class="info__item">
-				<section class="info__inner">
+				<section class="info__inner" id="skills">
 					<div class="title">
 						<h3>Skills</h3>
 					</div>
@@ -101,7 +137,7 @@
 				</section>
 			</div>
 			<div class="info__item">
-				<section class="info__inner">
+				<section class="info__inner" id="education">
 					<div class="title">
 						<h4>Education</h4>
 					</div>
@@ -109,7 +145,7 @@
 				</section>
 			</div>
 			<div class="info__item">
-				<section class="info__inner">
+				<section class="info__inner" id="language">
 					<div class="title">
 						<h4>Language</h4>
 					</div>
@@ -126,7 +162,7 @@
 				</section>
 			</div>
 			<div class="info__item">
-				<section class="info__inner">
+				<section class="info__inner" id="projects">
 					<div class="title">
 						<h2>Projects</h2>
 					</div>
@@ -161,6 +197,24 @@
 			</div>
 		</div>
 	</footer>
+
+	<script>
+		hljs.highlightAll();
+
+		const anchors = document.querySelectorAll('.js-menu a'),
+			menuCheck = document.getElementById('showmenu');
+		for (let anchor of anchors) {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				const blockID = anchor.getAttribute('href');
+				menuCheck.checked = !1;
+				document.querySelector(blockID).scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				});
+			});
+		}
+	</script>
 
 </body>
 
