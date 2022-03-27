@@ -17,6 +17,21 @@
 
 /* sm <= Medium (md) */
 @media (max-width : 768px) {
+	.g-box{
+		max-width: 550px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.nav__showmenu {
+		font-size: 52px;
+	}
+	.menu {
+		width: 100%;
+		text-align: center;
+		font-size: 28px;
+	}
+
 	.profile{
 		display: flex;
 		justify-content: center;
@@ -33,11 +48,6 @@
 		transform: unset;
 	}
 
-	.g-box{
-		max-width: 550px;
-		width: 100%;
-		margin: 0 auto;
-	}
 	.main{
 		background-color: unset;
 	}
